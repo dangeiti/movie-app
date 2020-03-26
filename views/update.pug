@@ -1,0 +1,29 @@
+extends ./layout.pug
+block content
+  h2 This is a form that you can use to update Movie Library
+  .container
+    form(method='POST' action='/updateMovie/' + movie._id class="text-alignLeft")
+      div.form-group
+        h4
+          label(for='description') Description
+        input#name.form-control(type='text', placeholder='movie description' name='description' value=movie.description)
+      div.form-group.movie-container
+        h4 Select Category of Movie
+        select#category(name='category')
+          option(value='drama') Drama
+          option(value='comedy') Comedy
+          option(value='action') Action
+          option(value='anime') Anime
+          option(value='suspense') Suspense
+          option(value='horror') Horror
+          option(value='adventure') Adventure
+
+        
+        div.form-group.movie-container
+          h4 Rate this Movie again:
+          input(type="number" id="quantity" name="rating" min="1" max="5" value=movie.rating)
+          label(for='quantity') Rate from 1 to 5
+      button.btn.btn-primary.margin-bottom.fullWidth(type='submit') Submit
+
+
+

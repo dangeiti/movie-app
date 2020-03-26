@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #0074D9;
+}
+
+h2 {
+  color: #00008B;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.margin-right{
+  margin-right: 20px !important;
+}
+
+.movie-container {
+  margin: 30px 0;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.margin-left {
+  margin-left: 80px;
+}
+
+.text-alignLeft {
+  text-align: left;
+}
+
+.fullWidth {
+  width: 100%;
+}
+

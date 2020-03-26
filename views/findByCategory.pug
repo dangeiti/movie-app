@@ -1,0 +1,18 @@
+extends ./layout.pug
+block content
+  h2 This is a form that you can use to find Movie by Category
+  .container
+    form(method='POST' action='/individualCategory')
+      div.form-group.movie-container
+        h4 Select Category of Movie to Find
+        select#category.margin-top(name='category')
+          option(value='drama') Drama
+          option(value='comedy') Comedy
+          option(value='action') Action
+          option(value='anime') Anime
+          option(value='suspense') Suspense
+          option(value='horror') Horror
+          option(value='adventure') Adventure
+      button.btn.btn-primary.fullWidth.margin-top(type='submit') Find
+
+

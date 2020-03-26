@@ -1,0 +1,27 @@
+extends ./layout.pug
+block content
+
+    div.main-container
+        div.main-header
+            h2 This site only shows information about specific category of a movie
+        div.movie-container
+            table.table.table-striped
+                thead
+                    tr
+                        th(scope="col" class="table-primary") Title
+                        th(scope="col" class="table-info") Description
+                        th(scope="col" class="table-info") Category
+                        th(scope="col" class="table-info") Rating
+                        th(scope="col" class="table-info") Created
+                each sortedMovie in sortedMovies
+                    tbody
+                        tr
+                            td(scope="col")= sortedMovie.title
+                            td(scope="col")= sortedMovie.description
+                            td(scope="col")= sortedMovie.category
+                            td(scope="col")= sortedMovie.rating
+                            td(scope="col")= sortedMovie.created
+
+        a(href="/" class="btn btn-info margin-bottom") Go back
+
+
