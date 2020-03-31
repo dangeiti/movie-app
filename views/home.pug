@@ -1,0 +1,24 @@
+extends ./layout.pug
+
+block content
+    a(href="/categories" class="btn btn-info margin-right") Find by Specific Category
+    a(href="/ratings" class="btn btn-info margin-right") Find by Specific Rating
+    a(href='/admin' class="btn btn-primary") Admin 
+    
+    div.movie-container.container-fluid
+        table.table.table-hover
+            thead
+                tr
+                    th(scope="col" class="table-primary") Title
+                    th(scope="col" class="table-info") Description
+                    th(scope="col" class="table-info") Category
+                    th(scope="col" class="table-info") Rating
+                    th(scope="col" class="table-info") Created
+            each movie in movies
+                    tbody
+                        tr
+                            td(scope="col")= movie.title
+                            td(scope="col")= movie.description
+                            td(scope="col")= movie.category
+                            td(scope="col")= movie.rating
+                            td(scope="col")= movie.created

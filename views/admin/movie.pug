@@ -1,4 +1,5 @@
-extends ./layout.pug
+extends ../layout.pug
+
 block content
   div.movie-container
     h2 This site shows selected movie information
@@ -19,8 +20,8 @@ block content
                           td(scope="col")= selectedMovie.rating
                           td(scope="col")= selectedMovie.created
   div.movie-container
-    a(href="/update/" + selectedMovie._id class="btn btn-info margin-right") Update Movie
-    a(href="/delete/" + selectedMovie._id class="btn btn-danger margin-right") Delete Movie 
+    a(href="/admin/update/" + selectedMovie._id class="btn btn-info margin-right") Update Movie
+    a(href="/admin/delete/" + selectedMovie._id class="btn btn-danger margin-right") Delete Movie 
     a(href="/" class="btn btn-info margin-right") Go back
           
 
