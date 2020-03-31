@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 const port = process.env.PORT || 3000;
 
-// const uri = "mongodb+srv://crud:crud1234@cluster0-vqrvg.mongodb.net/movie-api?retryWrites=true&w=majority";
-const uri = "mongodb://localhost:27017/movie-api";
+const uri = "mongodb+srv://crud:crud1234@cluster0-vqrvg.mongodb.net/movie-api?retryWrites=true&w=majority";
+// const uri = "mongodb://localhost:27017/movie-api";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.set('view engine', 'pug');
