@@ -11,7 +11,7 @@ block content
         input#name.form-control(type='text', placeholder='movie description' name='description')
       div.form-group.margin-bottom
         p Select A Category Of This Movie
-        select#category(name='category') Select A Category Of This Movie
+        select#category.form-control(name='category') Select A Category Of This Movie
           option(value='drama') Drama
           option(value='comedy') Comedy
           option(value='action') Action
@@ -21,7 +21,7 @@ block content
           option(value='adventure') Adventure
       div.form-group.margin-bottom
         p Rate this Movie from 1 to 5:
-        input(type="number" id="quantity" name="rating" min="1" max="5" value="0")
+        input.form-control(type="number" id="quantity" name="rating" min="1" max="5" value="0")
         label(for='quantity')
       button.btn.btn-primary.margin-bottom.fullWidth(type='submit') Submit
       div
