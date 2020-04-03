@@ -2,8 +2,11 @@ extends ../layout.pug
 
 block content
     a(href="/admin/create" class="btn btn-primary margin-right") Create Movie
+        i.las.la-plus.ml-2
     a(href="/deleteAll" class="btn btn-danger margin-right") Delete all movies
+        i.las.la-trash.ml-2
     a(href="/" class="btn btn-info") Go back
+        i.las.la-home.ml-2
     
     div.movie-container.container-fluid
         table.table.table-hover
@@ -23,3 +26,4 @@ block content
                             td(scope="col")= movie.rating
                             td(scope="col")= movie.created
                                 a(href="/admin/movie/" + movie._id class="btn btn-info margin-left" ) Select 
+    

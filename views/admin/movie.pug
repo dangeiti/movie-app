@@ -21,7 +21,10 @@ block content
                           td(scope="col")= selectedMovie.created
   div.movie-container
     a(href="/admin/update/" + selectedMovie._id class="btn btn-info margin-right") Update Movie
-    a(href="/admin/delete/" + selectedMovie._id class="btn btn-danger margin-right") Delete Movie 
+      i.las.la-user-edit.ml-2
+    a(href="/admin/delete/" + selectedMovie._id class="btn btn-danger margin-right") Delete Movie
+      i.las.la-trash.ml-2
     a(href="/" class="btn btn-info margin-right") Go back
+      i.las.la-home.ml-2
           
 

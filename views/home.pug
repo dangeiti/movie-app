@@ -2,8 +2,11 @@ extends ./layout.pug
 
 block content
     a(href="/categories" class="btn btn-info margin-right") Find by Specific Category
+        i.las.la-video.ml-2
     a(href="/ratings" class="btn btn-info margin-right") Find by Specific Rating
-    a(href='/admin' class="btn btn-primary") Admin 
+        i.las.la-star.ml-2
+    a(href='/admin' class="btn btn-primary") Admin
+        i.las.la-user-edit.ml-2
     
     div.movie-container.container-fluid
         table.table.table-hover
